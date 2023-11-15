@@ -220,6 +220,7 @@ db.customerdetails.find({ age: { $gt: 25 } })
 ```
 **11. Retrieve the males who are less than 25.**
 ```
+ db.customerdetails.find({ gender: "Male", age: { $lt: 25 } })
 
 ```
 **12. Update Francis age to 35, if Francis is not available upsert.**
